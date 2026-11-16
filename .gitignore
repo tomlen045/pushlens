@@ -1,0 +1,23 @@
+# local article production - never commit
+*-article.html
+shots/
+make_shots.py
+make_cover.py
+*.png
+e2e_log.json
+demo_baseline.json
+check_article.py
+qa_render.py
+upload_cdn.py
+publish_gitee.sh
+publish_github.py
+__pycache__/
+*.pyc
+
+# dev/QA internals (contain local-machine paths) - ship only pushlens.py
+part1.py
+part2.py
+part3.py
+assemble.py
+run_e2e.py
+
