@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# PART 1/3 of pushlens.py — assembled by cat
 """pushlens — a post-commit watchdog for git working trees.
 
 One file, zero dependencies, read-only on your repos.
@@ -480,9 +479,6 @@ def deterministic_probe(root: str, forced: str = None):
     return FsProbe(root), None
 
 
-# PART 2/3 of pushlens.py — scanning engine + evaluator
-# (assembled by cat; part1 is renamed pushlens->pushlens at build time)
-
 # ------------------------------------------------------------ repo state
 
 @dataclass
@@ -704,9 +700,6 @@ def find_repos(targets, max_depth=3):
                 dirnames[:] = []   # do not descend into nested repos
     return sorted(repos)
 
-
-# PART 3/3 of pushlens.py — CLI, baseline, selftest, output
-# (assembled by cat)
 
 # ------------------------------------------------------------- rendering
 
